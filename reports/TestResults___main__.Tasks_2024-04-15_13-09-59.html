@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Unittest Results</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <h2 class="text-capitalize">Unittest Results</h2>
+                <p class='attribute'><strong>Start Time: </strong>2024-04-15 13:09:59</p>
+                <p class='attribute'><strong>Duration: </strong>63.58 s</p>
+                <p class='attribute'><strong>Summary: </strong>Total: 4, Pass: 0, Error: 4</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-10 col-md-10">
+                <table class='table table-hover table-responsive'>
+                    <thead>
+                        <tr>
+                            <th>__main__.Tasks</th>
+                            <th>Status</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class='warning'>
+                            <td class="col-xs-10">test_add_tks</td>
+                            <td class="col-xs-1">
+                                <span class="label label-warning" style="display:block;width:40px;">Error</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">WebDriverException: Message: unknown error: net::ERR_CONNECTION_TIMED_OUT
+  (Session info: MicrosoftEdge=123.0.2420.97)
+Stacktrace:
+	GetHandleVerifier [0x00007FF72F795B82+59842]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF72F724AB2+220434]
+	(No symbol) [0x00007FF72F54DCD7]
+	(No symbol) [0x00007FF72F54676C]
+	(No symbol) [0x00007FF72F53A96B]
+	(No symbol) [0x00007FF72F53BCC0]
+	(No symbol) [0x00007FF72F53AB95]
+	(No symbol) [0x00007FF72F53A6DE]
+	(No symbol) [0x00007FF72F53A552]
+	(No symbol) [0x00007FF72F53811E]
+	(No symbol) [0x00007FF72F538C4C]
+	(No symbol) [0x00007FF72F5503F5]
+	(No symbol) [0x00007FF72F5CD66E]
+	(No symbol) [0x00007FF72F5B3F2A]
+	(No symbol) [0x00007FF72F58A0E7]
+	(No symbol) [0x00007FF72F5CD149]
+	(No symbol) [0x00007FF72F5B3B93]
+	(No symbol) [0x00007FF72F58960E]
+	(No symbol) [0x00007FF72F5887CC]
+	(No symbol) [0x00007FF72F5891C1]
+	Microsoft::Applications::Events::EventProperty::to_string [0x00007FF72F9458FC+1052188]
+	(No symbol) [0x00007FF72F5FFFC6]
+	Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF72F6A150C+37916]
+	Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF72F698E95+3493]
+	Microsoft::Applications::Events::EventProperty::to_string [0x00007FF72F944865+1047941]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF72F72D2C1+255265]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF72F7285B4+235540]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF72F7286EB+235851]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF72F71FEE1+201025]
+	BaseThreadInitThunk [0x00007FFC9A6A7344+20]
+	RtlUserThreadStart [0x00007FFC9BF426B1+33]
+</p><p style="color:maroon;">Traceback (most recent call last):
+  File "c:\Users\Carlos Feliz Recio\Desktop\Final-Test-Progracmacion-3\test_tasks.py", line 23, in test_add_tks
+    self.driver.get(self.TeaMW_link)
+  File "C:\Users\Carlos Feliz Recio\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 356, in get
+    self.execute(Command.GET, {"url": url})
+  File "C:\Users\Carlos Feliz Recio\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 347, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\Carlos Feliz Recio\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: unknown error: net::ERR_CONNECTION_TIMED_OUT
+  (Session info: MicrosoftEdge=123.0.2420.97)
+Stacktrace:
+	GetHandleVerifier [0x00007FF72F795B82+59842]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF72F724AB2+220434]
+	(No symbol) [0x00007FF72F54DCD7]
+	(No symbol) [0x00007FF72F54676C]
+	(No symbol) [0x00007FF72F53A96B]
+	(No symbol) [0x00007FF72F53BCC0]
+	(No symbol) [0x00007FF72F53AB95]
+	(No symbol) [0x00007FF72F53A6DE]
+	(No symbol) [0x00007FF72F53A552]
+	(No symbol) [0x00007FF72F53811E]
+	(No symbol) [0x00007FF72F538C4C]
+	(No symbol) [0x00007FF72F5503F5]
+	(No symbol) [0x00007FF72F5CD66E]
+	(No symbol) [0x00007FF72F5B3F2A]
+	(No symbol) [0x00007FF72F58A0E7]
+	(No symbol) [0x00007FF72F5CD149]
+	(No symbol) [0x00007FF72F5B3B93]
+	(No symbol) [0x00007FF72F58960E]
+	(No symbol) [0x00007FF72F5887CC]
+	(No symbol) [0x00007FF72F5891C1]
+	Microsoft::Applications::Events::EventProperty::to_string [0x00007FF72F9458FC+1052188]
+	(No symbol) [0x00007FF72F5FFFC6]
+	Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF72F6A150C+37916]
+	Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF72F698E95+3493]
+	Microsoft::Applications::Events::EventProperty::to_string [0x00007FF72F944865+1047941]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF72F72D2C1+255265]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF72F7285B4+235540]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF72F7286EB+235851]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF72F71FEE1+201025]
+	BaseThreadInitThunk [0x00007FFC9A6A7344+20]
+	RtlUserThreadStart [0x00007FFC9BF426B1+33]
+
+</p>
+                            </td>
+                        </tr>
+                        <tr class='warning'>
+                            <td class="col-xs-10">test_delete_tks</td>
+                            <td class="col-xs-1">
+                                <span class="label label-warning" style="display:block;width:40px;">Error</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">WebDriverException: Message: unknown error: net::ERR_CONNECTION_TIMED_OUT
+  (Session info: MicrosoftEdge=123.0.2420.97)
+Stacktrace:
+	GetHandleVerifier [0x00007FF72F795B82+59842]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF72F724AB2+220434]
+	(No symbol) [0x00007FF72F54DCD7]
+	(No symbol) [0x00007FF72F54676C]
+	(No symbol) [0x00007FF72F53A96B]
+	(No symbol) [0x00007FF72F53BCC0]
+	(No symbol) [0x00007FF72F53AB95]
+	(No symbol) [0x00007FF72F53A6DE]
+	(No symbol) [0x00007FF72F53A552]
+	(No symbol) [0x00007FF72F53811E]
+	(No symbol) [0x00007FF72F538C4C]
+	(No symbol) [0x00007FF72F5503F5]
+	(No symbol) [0x00007FF72F5CD66E]
+	(No symbol) [0x00007FF72F5B3F2A]
+	(No symbol) [0x00007FF72F58A0E7]
+	(No symbol) [0x00007FF72F5CD149]
+	(No symbol) [0x00007FF72F5B3B93]
+	(No symbol) [0x00007FF72F58960E]
+	(No symbol) [0x00007FF72F5887CC]
+	(No symbol) [0x00007FF72F5891C1]
+	Microsoft::Applications::Events::EventProperty::to_string [0x00007FF72F9458FC+1052188]
+	(No symbol) [0x00007FF72F5FFFC6]
+	Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF72F6A150C+37916]
+	Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF72F698E95+3493]
+	Microsoft::Applications::Events::EventProperty::to_string [0x00007FF72F944865+1047941]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF72F72D2C1+255265]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF72F7285B4+235540]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF72F7286EB+235851]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF72F71FEE1+201025]
+	BaseThreadInitThunk [0x00007FFC9A6A7344+20]
+	RtlUserThreadStart [0x00007FFC9BF426B1+33]
+</p><p style="color:maroon;">Traceback (most recent call last):
+  File "c:\Users\Carlos Feliz Recio\Desktop\Final-Test-Progracmacion-3\test_tasks.py", line 43, in test_delete_tks
+    self.driver.get(self.TeaMW_link)
+  File "C:\Users\Carlos Feliz Recio\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 356, in get
+    self.execute(Command.GET, {"url": url})
+  File "C:\Users\Carlos Feliz Recio\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 347, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\Carlos Feliz Recio\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: unknown error: net::ERR_CONNECTION_TIMED_OUT
+  (Session info: MicrosoftEdge=123.0.2420.97)
+Stacktrace:
+	GetHandleVerifier [0x00007FF72F795B82+59842]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF72F724AB2+220434]
+	(No symbol) [0x00007FF72F54DCD7]
+	(No symbol) [0x00007FF72F54676C]
+	(No symbol) [0x00007FF72F53A96B]
+	(No symbol) [0x00007FF72F53BCC0]
+	(No symbol) [0x00007FF72F53AB95]
+	(No symbol) [0x00007FF72F53A6DE]
+	(No symbol) [0x00007FF72F53A552]
+	(No symbol) [0x00007FF72F53811E]
+	(No symbol) [0x00007FF72F538C4C]
+	(No symbol) [0x00007FF72F5503F5]
+	(No symbol) [0x00007FF72F5CD66E]
+	(No symbol) [0x00007FF72F5B3F2A]
+	(No symbol) [0x00007FF72F58A0E7]
+	(No symbol) [0x00007FF72F5CD149]
+	(No symbol) [0x00007FF72F5B3B93]
+	(No symbol) [0x00007FF72F58960E]
+	(No symbol) [0x00007FF72F5887CC]
+	(No symbol) [0x00007FF72F5891C1]
+	Microsoft::Applications::Events::EventProperty::to_string [0x00007FF72F9458FC+1052188]
+	(No symbol) [0x00007FF72F5FFFC6]
+	Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF72F6A150C+37916]
+	Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF72F698E95+3493]
+	Microsoft::Applications::Events::EventProperty::to_string [0x00007FF72F944865+1047941]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF72F72D2C1+255265]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF72F7285B4+235540]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF72F7286EB+235851]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF72F71FEE1+201025]
+	BaseThreadInitThunk [0x00007FFC9A6A7344+20]
+	RtlUserThreadStart [0x00007FFC9BF426B1+33]
+
+</p>
+                            </td>
+                        </tr>
+                        <tr class='warning'>
+                            <td class="col-xs-10">test_edit_tks</td>
+                            <td class="col-xs-1">
+                                <span class="label label-warning" style="display:block;width:40px;">Error</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">WebDriverException: Message: unknown error: net::ERR_CONNECTION_TIMED_OUT
+  (Session info: MicrosoftEdge=123.0.2420.97)
+Stacktrace:
+	GetHandleVerifier [0x00007FF72F795B82+59842]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF72F724AB2+220434]
+	(No symbol) [0x00007FF72F54DCD7]
+	(No symbol) [0x00007FF72F54676C]
+	(No symbol) [0x00007FF72F53A96B]
+	(No symbol) [0x00007FF72F53BCC0]
+	(No symbol) [0x00007FF72F53AB95]
+	(No symbol) [0x00007FF72F53A6DE]
+	(No symbol) [0x00007FF72F53A552]
+	(No symbol) [0x00007FF72F53811E]
+	(No symbol) [0x00007FF72F538C4C]
+	(No symbol) [0x00007FF72F5503F5]
+	(No symbol) [0x00007FF72F5CD66E]
+	(No symbol) [0x00007FF72F5B3F2A]
+	(No symbol) [0x00007FF72F58A0E7]
+	(No symbol) [0x00007FF72F5CD149]
+	(No symbol) [0x00007FF72F5B3B93]
+	(No symbol) [0x00007FF72F58960E]
+	(No symbol) [0x00007FF72F5887CC]
+	(No symbol) [0x00007FF72F5891C1]
+	Microsoft::Applications::Events::EventProperty::to_string [0x00007FF72F9458FC+1052188]
+	(No symbol) [0x00007FF72F5FFFC6]
+	Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF72F6A150C+37916]
+	Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF72F698E95+3493]
+	Microsoft::Applications::Events::EventProperty::to_string [0x00007FF72F944865+1047941]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF72F72D2C1+255265]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF72F7285B4+235540]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF72F7286EB+235851]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF72F71FEE1+201025]
+	BaseThreadInitThunk [0x00007FFC9A6A7344+20]
+	RtlUserThreadStart [0x00007FFC9BF426B1+33]
+</p><p style="color:maroon;">Traceback (most recent call last):
+  File "c:\Users\Carlos Feliz Recio\Desktop\Final-Test-Progracmacion-3\test_tasks.py", line 33, in test_edit_tks
+    self.driver.get(self.TeaMW_link)
+  File "C:\Users\Carlos Feliz Recio\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 356, in get
+    self.execute(Command.GET, {"url": url})
+  File "C:\Users\Carlos Feliz Recio\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 347, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\Carlos Feliz Recio\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: unknown error: net::ERR_CONNECTION_TIMED_OUT
+  (Session info: MicrosoftEdge=123.0.2420.97)
+Stacktrace:
+	GetHandleVerifier [0x00007FF72F795B82+59842]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF72F724AB2+220434]
+	(No symbol) [0x00007FF72F54DCD7]
+	(No symbol) [0x00007FF72F54676C]
+	(No symbol) [0x00007FF72F53A96B]
+	(No symbol) [0x00007FF72F53BCC0]
+	(No symbol) [0x00007FF72F53AB95]
+	(No symbol) [0x00007FF72F53A6DE]
+	(No symbol) [0x00007FF72F53A552]
+	(No symbol) [0x00007FF72F53811E]
+	(No symbol) [0x00007FF72F538C4C]
+	(No symbol) [0x00007FF72F5503F5]
+	(No symbol) [0x00007FF72F5CD66E]
+	(No symbol) [0x00007FF72F5B3F2A]
+	(No symbol) [0x00007FF72F58A0E7]
+	(No symbol) [0x00007FF72F5CD149]
+	(No symbol) [0x00007FF72F5B3B93]
+	(No symbol) [0x00007FF72F58960E]
+	(No symbol) [0x00007FF72F5887CC]
+	(No symbol) [0x00007FF72F5891C1]
+	Microsoft::Applications::Events::EventProperty::to_string [0x00007FF72F9458FC+1052188]
+	(No symbol) [0x00007FF72F5FFFC6]
+	Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF72F6A150C+37916]
+	Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF72F698E95+3493]
+	Microsoft::Applications::Events::EventProperty::to_string [0x00007FF72F944865+1047941]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF72F72D2C1+255265]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF72F7285B4+235540]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF72F7286EB+235851]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF72F71FEE1+201025]
+	BaseThreadInitThunk [0x00007FFC9A6A7344+20]
+	RtlUserThreadStart [0x00007FFC9BF426B1+33]
+
+</p>
+                            </td>
+                        </tr>
+                        <tr class='warning'>
+                            <td class="col-xs-10">test_see_tks</td>
+                            <td class="col-xs-1">
+                                <span class="label label-warning" style="display:block;width:40px;">Error</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">WebDriverException: Message: unknown error: net::ERR_CONNECTION_TIMED_OUT
+  (Session info: MicrosoftEdge=123.0.2420.97)
+Stacktrace:
+	GetHandleVerifier [0x00007FF72F795B82+59842]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF72F724AB2+220434]
+	(No symbol) [0x00007FF72F54DCD7]
+	(No symbol) [0x00007FF72F54676C]
+	(No symbol) [0x00007FF72F53A96B]
+	(No symbol) [0x00007FF72F53BCC0]
+	(No symbol) [0x00007FF72F53AB95]
+	(No symbol) [0x00007FF72F53A6DE]
+	(No symbol) [0x00007FF72F53A552]
+	(No symbol) [0x00007FF72F53811E]
+	(No symbol) [0x00007FF72F538C4C]
+	(No symbol) [0x00007FF72F5503F5]
+	(No symbol) [0x00007FF72F5CD66E]
+	(No symbol) [0x00007FF72F5B3F2A]
+	(No symbol) [0x00007FF72F58A0E7]
+	(No symbol) [0x00007FF72F5CD149]
+	(No symbol) [0x00007FF72F5B3B93]
+	(No symbol) [0x00007FF72F58960E]
+	(No symbol) [0x00007FF72F5887CC]
+	(No symbol) [0x00007FF72F5891C1]
+	Microsoft::Applications::Events::EventProperty::to_string [0x00007FF72F9458FC+1052188]
+	(No symbol) [0x00007FF72F5FFFC6]
+	Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF72F6A150C+37916]
+	Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF72F698E95+3493]
+	Microsoft::Applications::Events::EventProperty::to_string [0x00007FF72F944865+1047941]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF72F72D2C1+255265]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF72F7285B4+235540]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF72F7286EB+235851]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF72F71FEE1+201025]
+	BaseThreadInitThunk [0x00007FFC9A6A7344+20]
+	RtlUserThreadStart [0x00007FFC9BF426B1+33]
+</p><p style="color:maroon;">Traceback (most recent call last):
+  File "c:\Users\Carlos Feliz Recio\Desktop\Final-Test-Progracmacion-3\test_tasks.py", line 17, in test_see_tks
+    self.driver.get(self.TeaMW_link)
+  File "C:\Users\Carlos Feliz Recio\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 356, in get
+    self.execute(Command.GET, {"url": url})
+  File "C:\Users\Carlos Feliz Recio\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 347, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\Carlos Feliz Recio\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: unknown error: net::ERR_CONNECTION_TIMED_OUT
+  (Session info: MicrosoftEdge=123.0.2420.97)
+Stacktrace:
+	GetHandleVerifier [0x00007FF72F795B82+59842]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF72F724AB2+220434]
+	(No symbol) [0x00007FF72F54DCD7]
+	(No symbol) [0x00007FF72F54676C]
+	(No symbol) [0x00007FF72F53A96B]
+	(No symbol) [0x00007FF72F53BCC0]
+	(No symbol) [0x00007FF72F53AB95]
+	(No symbol) [0x00007FF72F53A6DE]
+	(No symbol) [0x00007FF72F53A552]
+	(No symbol) [0x00007FF72F53811E]
+	(No symbol) [0x00007FF72F538C4C]
+	(No symbol) [0x00007FF72F5503F5]
+	(No symbol) [0x00007FF72F5CD66E]
+	(No symbol) [0x00007FF72F5B3F2A]
+	(No symbol) [0x00007FF72F58A0E7]
+	(No symbol) [0x00007FF72F5CD149]
+	(No symbol) [0x00007FF72F5B3B93]
+	(No symbol) [0x00007FF72F58960E]
+	(No symbol) [0x00007FF72F5887CC]
+	(No symbol) [0x00007FF72F5891C1]
+	Microsoft::Applications::Events::EventProperty::to_string [0x00007FF72F9458FC+1052188]
+	(No symbol) [0x00007FF72F5FFFC6]
+	Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF72F6A150C+37916]
+	Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF72F698E95+3493]
+	Microsoft::Applications::Events::EventProperty::to_string [0x00007FF72F944865+1047941]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF72F72D2C1+255265]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF72F7285B4+235540]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF72F7286EB+235851]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF72F71FEE1+201025]
+	BaseThreadInitThunk [0x00007FFC9A6A7344+20]
+	RtlUserThreadStart [0x00007FFC9BF426B1+33]
+
+</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                Total: 4, Pass: 0, Error: 4 -- Duration: 63.58 s
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('td').on('click', '.btn', function(e){
+                e.preventDefault();
+                e.stopImmediatePropagation();
+                var $this = $(this);
+                var $nextRow = $this.closest('tr').next('tr');
+                $nextRow.slideToggle("fast");
+                $this.text(function(i, text){
+                    if (text === 'View') {
+                        return 'Hide';
+                    } else {
+                        return 'View';
+                    };
+                });
+            });
+        });
+    </script>
+</body>
+</html
