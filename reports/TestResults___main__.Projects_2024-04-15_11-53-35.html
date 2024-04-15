@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Unittest Results</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <h2 class="text-capitalize">Unittest Results</h2>
+                <p class='attribute'><strong>Start Time: </strong>2024-04-15 11:53:35</p>
+                <p class='attribute'><strong>Duration: </strong>3.60 s</p>
+                <p class='attribute'><strong>Summary: </strong>Total: 4, Pass: 3, Error: 1</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-10 col-md-10">
+                <table class='table table-hover table-responsive'>
+                    <thead>
+                        <tr>
+                            <th>__main__.Projects</th>
+                            <th>Status</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class='success'>
+                            <td class="col-xs-10">test_add_proj</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">test_delete_proj</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                            </td>
+                        </tr>
+                        <tr class='warning'>
+                            <td class="col-xs-10">test_edit_proj</td>
+                            <td class="col-xs-1">
+                                <span class="label label-warning" style="display:block;width:40px;">Error</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/div[1]/div[2]/main/div/div/table/tbody/tr/td[4]/div/a/button"}
+  (Session info: MicrosoftEdge=123.0.2420.97); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF7DB195B82+59842]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7DB124AB2+220434]
+	(No symbol) [0x00007FF7DAF4DCD7]
+	(No symbol) [0x00007FF7DAF9489D]
+	(No symbol) [0x00007FF7DAF94960]
+	(No symbol) [0x00007FF7DAFCF587]
+	(No symbol) [0x00007FF7DAFB3F6F]
+	(No symbol) [0x00007FF7DAF8A0E7]
+	(No symbol) [0x00007FF7DAFCD149]
+	(No symbol) [0x00007FF7DAFB3B93]
+	(No symbol) [0x00007FF7DAF8960E]
+	(No symbol) [0x00007FF7DAF887CC]
+	(No symbol) [0x00007FF7DAF891C1]
+	Microsoft::Applications::Events::EventProperty::to_string [0x00007FF7DB3458FC+1052188]
+	(No symbol) [0x00007FF7DAFFFFC6]
+	Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF7DB0A150C+37916]
+	Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF7DB098E95+3493]
+	Microsoft::Applications::Events::EventProperty::to_string [0x00007FF7DB344865+1047941]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7DB12D2C1+255265]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7DB1285B4+235540]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7DB1286EB+235851]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7DB11FEE1+201025]
+	BaseThreadInitThunk [0x00007FFC9A6A7344+20]
+	RtlUserThreadStart [0x00007FFC9BF426B1+33]
+</p><p style="color:maroon;">Traceback (most recent call last):
+  File "c:\Users\Carlos Feliz Recio\Desktop\programacion3-proyecto-final-tests\test_projects.py", line 48, in test_edit_proj
+    self.driver.find_element(By.XPATH, self.edit_proj_btn).click()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Carlos Feliz Recio\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 741, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Carlos Feliz Recio\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 347, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\Carlos Feliz Recio\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/div[1]/div[2]/main/div/div/table/tbody/tr/td[4]/div/a/button"}
+  (Session info: MicrosoftEdge=123.0.2420.97); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF7DB195B82+59842]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7DB124AB2+220434]
+	(No symbol) [0x00007FF7DAF4DCD7]
+	(No symbol) [0x00007FF7DAF9489D]
+	(No symbol) [0x00007FF7DAF94960]
+	(No symbol) [0x00007FF7DAFCF587]
+	(No symbol) [0x00007FF7DAFB3F6F]
+	(No symbol) [0x00007FF7DAF8A0E7]
+	(No symbol) [0x00007FF7DAFCD149]
+	(No symbol) [0x00007FF7DAFB3B93]
+	(No symbol) [0x00007FF7DAF8960E]
+	(No symbol) [0x00007FF7DAF887CC]
+	(No symbol) [0x00007FF7DAF891C1]
+	Microsoft::Applications::Events::EventProperty::to_string [0x00007FF7DB3458FC+1052188]
+	(No symbol) [0x00007FF7DAFFFFC6]
+	Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF7DB0A150C+37916]
+	Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF7DB098E95+3493]
+	Microsoft::Applications::Events::EventProperty::to_string [0x00007FF7DB344865+1047941]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7DB12D2C1+255265]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7DB1285B4+235540]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7DB1286EB+235851]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7DB11FEE1+201025]
+	BaseThreadInitThunk [0x00007FFC9A6A7344+20]
+	RtlUserThreadStart [0x00007FFC9BF426B1+33]
+
+</p>
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">test_see_projs</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                Total: 4, Pass: 3, Error: 1 -- Duration: 3.60 s
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('td').on('click', '.btn', function(e){
+                e.preventDefault();
+                e.stopImmediatePropagation();
+                var $this = $(this);
+                var $nextRow = $this.closest('tr').next('tr');
+                $nextRow.slideToggle("fast");
+                $this.text(function(i, text){
+                    if (text === 'View') {
+                        return 'Hide';
+                    } else {
+                        return 'View';
+                    };
+                });
+            });
+        });
+    </script>
+</body>
+</html
